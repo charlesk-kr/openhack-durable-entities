@@ -16,6 +16,8 @@ namespace InventoryManagement
         public string DistributionId { get; set; }
         [JsonProperty("items")]
         public List<ShipmentItem> Items { get; set; }
+        [JsonProperty("lastShipmentTimestamp")]
+        public DateTime? LastShipmentTimestamp { get; set; }
     }
 
     public class ShipmentItem
